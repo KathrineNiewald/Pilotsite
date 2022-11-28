@@ -1,0 +1,72 @@
+
+@media (min-width: 810px) {
+
+    body {
+        max-width: 1200px;
+  
+      }
+  
+@font-face {
+    src: url(fonts/Montserrat-font.woff);
+    font-family:mont;
+
+}
+html {
+    background: url(imgs/stol.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#d0ddfa;
+    max-width: 1200px;
+}
+
+.container{
+    width:1200px;
+    height: 5px;
+    position:relative;
+    margin: 20px auto;
+
+}
+.container img {
+    width:1200px;
+    height: 700px;
+    margin: 100px;
+}
+
+.h1{
+    color: #3849fe;
+    position:relative;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    font-family: mont;
+    padding-top: 20%;
+    font-size: 400%;
+    font-weight: bolder;
+
+}
+
+
+.tekst {
+    color: #000000;
+    position:relative;
+    left: 90%;
+    padding-bottom: 30%;
+    transform: translate(-50%, -50%);
+    font-family: mont;
+    font-size: 350%;
+
+}  
+
+.container4 {
+    width: 100%;
+    display:grid;  
+    grid-column: 1fr 1fr;
+
+} 
+}
