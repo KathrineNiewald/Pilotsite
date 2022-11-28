@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Størrelse og placering af spil-elementer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="skjult/main.css" />
+    <link rel="stylesheet" href="gameelements.css" />
+  </head>
+
+  <body>
+    <h1>Størrelse og placering af spil-elementer</h1>
+
+    <div id="principper">
+      <h2>Principper - hvilke properties på hhv. container og sprite</h2>
+      <img class="sd" src="skjult/sd2.png" alt="screendump" />
+    </div>
+
+    <div id="game_elements">
+      <h2>Spil-elementer og størrelsesforhold</h2>
+      <img class="sd" src="skjult/sd.png" alt="screendump" />
+    </div>
+
+    <div id="opgaver">
+      <section id="opgave1">
+        <h3>Opgave 1</h3>
+        <p>
+          Du skal placere et spil-element (fluesvamp.svg) i kassen herunder. Du
+          skal give elementet den rigtige størrelse og placere det som vist på
+          den sort/hvide baggrund.
+          <i>OBS! Du skal kun redigere i filen: gameelements.css</i>
+        </p>
+        <ol>
+          <li>
+            Når vi skal placere containeren i forhold til kassen, så skal kassen
+            (#kasse_1) have en <b>position:relative;</b>
+          </li>
+          <li>
+            For at kunne se containeren giver vi den en midlertidig outline
+            (2px, stiplet og rød). <br />
+            Billedet skal have en størrelse. Her må du prøve dig frem - start
+            med en <b>width</b> på 20% og samme <b>aspect-ratio</b> som svg'en.
+            Fluesvampen har <b>aspect-ratio</b> 300/400 (eller 3/4).
+          </li>
+          <li>
+            Nu skal svampen placeres det rigtige sted i "kassen" vha. CSS
+            egenskaberne <b>top og left</b> (i princippet kunne vi godt bruge
+            bottom og left, men i spillet skal du helst kun bruge top og left).
+            Top og left virker kun hvis elementet har en absolute positionering,
+            giv derfor #fluesvamp_container en <b>position: absolute;</b>.
+            <br />
+            Brug evt. browser inspectoren til at finde den helt rigtige
+            placering.
+          </li>
+          <li>
+            Nu skal fluesvamp_sprite have en størrelse og et baggrundsbillede.
+            Først skal spriten fylde containeren helt ud, så giv den
+            <b>width 100%</b> og <b>height 100%</b>. Indsæt herefter
+            baggrundsbilledet i spriten vha. egenskaberne:
+            <b>background-image</b> og <b>background-size</b>.
+          </li>
+          <li>Nu kan du slette den stiplede outline</li>
+        </ol>
+
+        <div id="kasse_1">
+          <div id="fluesvamp_container">
+            <div id="fluesvamp_sprite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="opgave2">
+        <h3>Opgave 2</h3>
+        <p>
+          Carl-Johan svampen skal være kæmpestor og den del stikker uden for
+          kassen skal skjules.
+          <i>OBS! Du skal kun redigere i filen: gameelements.css</i>
+        </p>
+        <ol>
+          <li>
+            For at kunne se containeren, giver vi den igen en rød stiplet
+            outline. <br />
+            Svampen skal fylde halvdelen af kassen i bredden. Giv derfor
+            cotaineren en
+            <b>width</b> på 50% og samme <b>aspect-ratio</b> som svg'en.
+            Carl-johan svampen har <b>aspect-ratio</b> 150/250 (svarende til
+            3/5).
+          </li>
+          <li>
+            Placer svampen helt til højre i kassen ved at ændre i værdierne:
+            <b>top og left</b>. Husk som i det forrige eksempel, at hvis svampen
+            skal positioneres i forhold til kassen, så skal #carljohan_container
+            have en <b>position:absolute;</b> og #kasse_2 skal have en
+            <b>position:relative;</b>
+          </li>
+          <li>
+            Indsæt den rigtige svg i den inderste div (#carljohan_sprite) med
+            <b>background-image</b> og <b>background-size</b>. Husk også at
+            spriten skal fylde containeren helt ud (<b>width 100%</b> og
+            <b>height 100%</b>).
+          </li>
+          <li>
+            brug CSS egenskaben <b>overflow</b> på #kasse_2 for at skjule den
+            del af svampen der ligger udenfor kassen, og slet derefter den
+            stiplede outline.
+          </li>
+        </ol>
+
+        <div id="kasse_2">
+          <div id="carljohan_container">
+            <div id="carljohan_sprite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="opgave3">
+        <h3>Opgave 3</h3>
+        <p><i>OBS! Du skal kun redigere i filen: gameelements.css</i></p>
+        <ol>
+          <li>
+            For at kunne se containeren giver vi den igen en rød stiplet
+            outline. <br />
+            Giv containeren en størrelse (<b>width</b>) på 30% og samme
+            <b>aspect-ratio</b> som svg'en: 350/400 (eller 7/8). Prøv dig frem i
+            forhold til den nøjagtige bredde.
+          </li>
+          <li>
+            Spriten skal igen fylde containeren helt ud, (<b>width 100%</b> og
+            <b>height 100%</b>). Indsæt herefter den rigtige svg i
+            (#stinksvamp_sprite).
+          </li>
+          <li>
+            Placer nu svampen i midten af kassen ved at tilføje:
+            <b>top og left</b> til containeren, samt
+            <b>position:absolute;</b> og <b>position:relative;</b> på hhv.
+            container og "kasse";
+            <br />
+            Det kan være lidt svært at udregne hvor elementet skal placeres for
+            at ligge præcis i midten, men horizontalt kan du bruge denne
+            udregning: <br />
+            <b>
+              left = (bredden af kassen i % / 2) - (bredden af billedet i % /
+              2).
+            </b>
+            <br />
+          </li>
+          <li>
+            I forhold til højden er det lidt mere indviklet at regne ud, så prøv
+            dig frem med hjælp fra inspectoren :)
+          </li>
+        </ol>
+
+        <div id="kasse_3">
+          <div id="stinksvamp_container">
+            <div id="stinksvamp_sprite"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

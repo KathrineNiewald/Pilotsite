@@ -1,0 +1,39 @@
+/*--------------------opgave 1-------------------*/
+
+#kasse_1 {
+  position: relative;
+}
+
+#fluesvamp_container {
+  outline: 1px dashed red;
+  width: 16.4%;
+  aspect-ratio: 3/4;
+  position: absolute;
+  top: 61%;
+  left: 0%;
+}
+
+#fluesvamp_sprite {
+}
+
+/*--------------------opgave 2-------------------*/
+
+#kasse_2 {
+}
+
+#carljohan_container {
+}
+
+#carljohan_sprite {
+}
+
+/*--------------------opgave 3-------------------*/
+
+#kasse_3 {
+}
+
+#stinksvamp_container {
+}
+
+#stinksvamp_sprite {
+}

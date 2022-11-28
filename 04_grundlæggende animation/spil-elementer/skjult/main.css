@@ -1,0 +1,64 @@
+body {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  margin: 0;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+#game_elements,
+#principper,
+#opgaver,
+h1 {
+  width: 96%;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+img {
+  width: 100%;
+}
+i {
+  color: #de3f04;
+  font-weight: 600;
+}
+strong {
+  font-family: monospace;
+  font-size: 1.3rem;
+  color: blue;
+}
+section {
+  background-color: #ffede7;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+li {
+  margin-bottom: 1em;
+}
+#kasse_1,
+#kasse_2,
+#kasse_3 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  outline: 2px dashed black;
+  background-size: cover;
+}
+#kasse_1 {
+  background-image: url(bg1.png);
+}
+#kasse_2 {
+  background-image: url(bg2.png);
+}
+#kasse_3 {
+  background-image: url(bg3.png);
+}
